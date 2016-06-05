@@ -9,4 +9,6 @@ setup(name='funniest',
       license='MIT',
       packages=['funniest'],
       data_files=[ ('', ['__main__.py', ])],
+      test_suite='nose.collector',
+      tests_require=['nose'],
       zip_safe=False)

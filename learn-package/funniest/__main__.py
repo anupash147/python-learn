@@ -8,3 +8,10 @@ sys.path.insert(0, path)
 
 import funniest
 print funniest.joke()
+print "I am not funny"
+
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("echo", help="echo the string you use here")
+args = parser.parse_args()
+print args.echo
